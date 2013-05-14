@@ -1,0 +1,357 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>dbcompareResult</title>
+<style type="text/css">
+body{
+text-align:center; 
+}
+table {
+	border-collapse: collapse;
+	font-size: 14px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.tableColumn {
+	margin-left: 10px
+}
+
+} 
+.blue_tr {
+	font-size: 12px;
+	background-color: #D9E8FE
+} 
+.navtittle {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 22px;
+	background-color: #7EAAEB;
+	padding-left: 15px;
+}
+</style>
+<script>
+	function trun(divname) {
+		if (document.getElementById(divname + '_left').style.display == 'none') {
+			document.getElementById(divname + '_left').style.display = 'block';
+			document.getElementById(divname + '_right').style.display = 'block';
+		} else {
+			document.getElementById(divname + '_left').style.display = 'none';
+			document.getElementById(divname + '_right').style.display = 'none';
+		}
+	}
+</script>
+</head>
+
+<body>
+<div  align='center'>
+<div align="left">
+<span>
+database structure compare<br>
+First,fill in connection information(left and right)<br>
+Second,execute compare (toolbar->Compare or menu->Run->Compare)<br>
+Third,center Widget show compare result info.<br>
+Like this example<br>
+click the table name will show column list.<br>
+</span>
+</div>
+	<table border="1">
+
+		<thead>
+			<tr class="navtittle">
+				<th Colspan="3">DbCompare
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comparetime:2010-12-31
+					16:24:40</th>
+			</tr>
+			<tr class="blue_tr">
+				<th width="40%">left connection URI</th>
+				<th width="20%">&nbsp;</th>
+				<th width="40%">right connection URI</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<tr>
+				<td><span style="cursor:hand"
+					onclick="javascript:trun('crm_seq')">crm_seq</span>
+				<div id="crm_seq_left" style="display:none;">
+						<table class="tableColumn">
+							<tr class="blue_tr">
+								<td>code</td>
+								<td>primary</td>
+								<td>&nbsp;DateType&nbsp;</td>
+								<td>&nbsp;length&nbsp;</td>
+								<td>nullable</td>
+							<tr>
+							<tr>
+								<td>code</td>
+								<td>false</td>
+								<td>char</td>
+								<td>2</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>id</td>
+								<td>true</td>
+								<td>int</td>
+								<td>11</td>
+								<td>false</td>
+							</tr>
+							<tr>
+								<td>seq</td>
+								<td>false</td>
+								<td>int</td>
+								<td>11</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>types</td>
+								<td>false</td>
+								<td>char</td>
+								<td>4</td>
+								<td>true</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>=(left==right)</td>
+				<td><span style="cursor:hand"
+					onclick="javascript:trun('crm_seq')">crm_seq</span>
+				<div id="crm_seq_right" style="display:none;">
+						<table class="tableColumn">
+							<tr class="blue_tr">
+								<td>code</td>
+								<td>primary</td>
+								<td>&nbsp;DateType&nbsp;</td>
+								<td>&nbsp;length&nbsp;</td>
+								<td>nullable</td>
+							<tr>
+							<tr>
+								<td>code</td>
+								<td>false</td>
+								<td>char</td>
+								<td>2</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>id</td>
+								<td>true</td>
+								<td>int</td>
+								<td>11</td>
+								<td>false</td>
+							</tr>
+							<tr>
+								<td>seq</td>
+								<td>false</td>
+								<td>int</td>
+								<td>11</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>types</td>
+								<td>false</td>
+								<td>char</td>
+								<td>4</td>
+								<td>true</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><span style="cursor:hand"
+					onclick="javascript:trun('crm_account_relation')"><font
+						color="#FF0000">crm_account_relation</font>
+				</span>
+				<div id="crm_account_relation_left" style="display:none;">
+						<table class="tableColumn">
+							<tr class="blue_tr">
+								<td>code</td>
+								<td>primary</td>
+								<td>&nbsp;DateType&nbsp;</td>
+								<td>&nbsp;length&nbsp;</td>
+								<td>nullable</td>
+							<tr>
+							<tr>
+								<td>account_id</td>
+								<td>false</td>
+								<td><font color="#FF0000">varchar</font>
+								</td>
+								<td>16</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>acct_rela_id</td>
+								<td>false</td>
+								<td>int</td>
+								<td>11</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>acctitem_grp_id</td>
+								<td>false</td>
+								<td>int</td>
+								<td>11</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>id</td>
+								<td>true</td>
+								<td>int</td>
+								<td>11</td>
+								<td>false</td>
+							</tr>
+							<tr>
+								<td>msg_state</td>
+								<td>false</td>
+								<td><font color="#FF0000">varchar</font>
+								</td>
+								<td>1</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>price_obj_id</td>
+								<td>false</td>
+								<td>bigint</td>
+								<td><font color="#FF0000">20</font>
+								</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>price_obj_inst_id</td>
+								<td>false</td>
+								<td><font color="#FF0000">varchar</font>
+								</td>
+								<td>14</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>seg_id</td>
+								<td>false</td>
+								<td>smallint</td>
+								<td>6</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>serv_id</td>
+								<td>false</td>
+								<td><font color="#FF0000">varchar</font>
+								</td>
+								<td>14</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td>&nbsp;(<font color="#FF0000">left<>right</font>)</td>
+				<td><span style="cursor:hand"
+					onclick="javascript:trun('crm_account_relation')"><font
+						color="#FF0000">crm_account_relation</font>
+				</span>
+				<div id="crm_account_relation_right" style="display:none;">
+						<table class="tableColumn">
+							<tr class="blue_tr">
+								<td>code</td>
+								<td>primary</td>
+								<td>&nbsp;DateType&nbsp;</td>
+								<td>&nbsp;length&nbsp;</td>
+								<td>nullable</td>
+							<tr>
+							<tr>
+								<td>account_id</td>
+								<td>false</td>
+								<td><font color="#FF0000">char</font>
+								</td>
+								<td>16</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>acct_rela_id</td>
+								<td>false</td>
+								<td>int</td>
+								<td>11</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>acctitem_grp_id</td>
+								<td>false</td>
+								<td>int</td>
+								<td>11</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>id</td>
+								<td>true</td>
+								<td>int</td>
+								<td>11</td>
+								<td>false</td>
+							</tr>
+							<tr>
+								<td>msg_state</td>
+								<td>false</td>
+								<td><font color="#FF0000">char</font>
+								</td>
+								<td>1</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>price_obj_id</td>
+								<td>false</td>
+								<td>bigint</td>
+								<td><font color="#FF0000">11</font>
+								</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>price_obj_inst_id</td>
+								<td>false</td>
+								<td><font color="#FF0000">char</font>
+								</td>
+								<td>14</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>seg_id</td>
+								<td>false</td>
+								<td>smallint</td>
+								<td>6</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td>serv_id</td>
+								<td>false</td>
+								<td><font color="#FF0000">char</font>
+								</td>
+								<td>14</td>
+								<td>true</td>
+							</tr>
+							<tr>
+								<td><font color="#33CC00">sort_field</font>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td><font color="#33CC00">pri_discount_calc</font>
+				</td>
+				<td>&nbsp;(only left has the element)</td>
+				<td>&nbsp;</td>
+			</tr>
+
+
+
+		</tbody>
+	</table>
+<div align="left">
+<span>
+Now, immediately [send me an email](zhengys@gmail.com) thanking me for this great tool ;-).<br> This step is optional but recommended.<br>
+</span>
+</div>
+</div>
+</body>
+</html>

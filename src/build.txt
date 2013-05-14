@@ -1,0 +1,10 @@
+1.py2exe
+setup.py
+2.pyinstaller
+
+D:\DevelopTools\pyinstaller-2.0>
+python pyinstaller.py --icon J:\projects\dbcompare\src\resource\icons\dbcompare.ico -w  J:\projects\dbcompare\src\DbCompare.py
+
+python pyinstaller.py DbCompare/DbCompare.spec
+resource
+readme.txt

@@ -1,0 +1,17 @@
+#Tue May 07 16:16:17 CST 2013
+eclipse.preferences.version=1
+encoding//src/DBCompare.py=utf-8
+encoding//src/KdeDc/Browser.py=utf-8
+encoding//src/KdeDc/Previewer.py=utf-8
+encoding//src/KdeDc/__init__.py=utf-8
+encoding//src/KdeDc/ui_previewer.py=utf-8
+encoding//src/ServiceDc/ConnectionCheck.py=utf-8
+encoding//src/ServiceDc/DbCompare.py=utf-8
+encoding//src/ServiceDc/__init__.py=utf-8
+encoding//src/ServiceDc/comparer.py=utf-8
+encoding//src/pdbc/AbstractDriver.py=utf-8
+encoding//src/pdbc/DriverManager.py=utf-8
+encoding//src/pdbc/MySqlDriver.py=utf-8
+encoding//src/pdbc/OracleDriver.py=utf-8
+encoding//src/pdbc/SqlServerDriver.py=utf-8
+encoding//src/pdbc/metadata.py=utf-8
